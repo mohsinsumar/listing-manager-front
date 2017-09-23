@@ -53,7 +53,7 @@ function listing_manager_front_enqueue() {
 		$content_width = 1170;
 	}
 }
-add_action( 'wp_enqueue_scripts', 'listing_manager_front_enqueue' );
+add_action( 'wp_enqueue_scripts', 'listing_manager_front_enqueue', 100 );
 
 /**
  * Custom widget areas
